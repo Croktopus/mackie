@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:highlander-cache
 EELAYER 29 0
 EELAYER END
 $Descr A2 23386 16535
@@ -519,13 +518,7 @@ F 3 "" H 2650 13500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2650 13500 2550 13500
-Wire Wire Line
-	2550 13500 2550 13600
-Connection ~ 2550 13500
-Connection ~ 2550 13600
-Wire Wire Line
-	2550 13600 2550 13900
+	2650 13500 2600 13500
 Wire Wire Line
 	2150 13900 2250 13900
 Connection ~ 2250 13900
@@ -856,4 +849,11 @@ F 3 "" H 5450 15200 50  0001 C CNN
 	1    5450 15200
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	2550 13900 2600 13900
+Wire Wire Line
+	2600 13900 2600 13500
+Connection ~ 2600 13500
+Wire Wire Line
+	2600 13500 2550 13500
 $EndSCHEMATC

@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:mackie-cache
 EELAYER 29 0
 EELAYER END
 $Descr A2 23386 16535
@@ -68,7 +69,7 @@ Text GLabel 4150 11000 0    50   Input ~ 0
 NRST
 Text GLabel 4150 11200 0    50   Input ~ 0
 BOOT0
-Text GLabel 2800 14700 0    50   Input ~ 0
+Text GLabel 2700 14700 0    50   Input ~ 0
 NRST
 $Comp
 L keyboard_parts:SW_PUSH SW1
@@ -856,4 +857,31 @@ Wire Wire Line
 Connection ~ 2600 13500
 Wire Wire Line
 	2600 13500 2550 13500
+$Comp
+L Device:C_Small C10
+U 1 1 5D22204B
+P 2750 14800
+F 0 "C10" H 2900 14800 50  0000 C CNN
+F 1 "1uf" H 2900 14900 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 2750 14800 50  0001 C CNN
+F 3 "~" H 2750 14800 50  0001 C CNN
+	1    2750 14800
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2700 14700 2750 14700
+Connection ~ 2750 14700
+Wire Wire Line
+	2750 14700 2800 14700
+$Comp
+L power:GND #PWR034
+U 1 1 5D22529A
+P 2750 14900
+F 0 "#PWR034" H 2750 14650 50  0001 C CNN
+F 1 "GND" H 2755 14727 50  0000 C CNN
+F 2 "" H 2750 14900 50  0001 C CNN
+F 3 "" H 2750 14900 50  0001 C CNN
+	1    2750 14900
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
